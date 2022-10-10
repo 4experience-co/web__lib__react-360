@@ -5,7 +5,7 @@ import isDeviceOrientationEvent from "~/utils/isDeviceOrientationEvent";
 import isDeviceOrientationEventWebkit from "~/utils/isDeviceOrientationEventWebkit";
 
 const useOrientation = () => {
-  const [hasPermission, setHasPermission] = useState(false);
+  const [, setHasPermission] = useState(false);
 
   const [addEventListeners, setAddEventListeners] = useState<boolean>(false);
   const [heading, setHeading] = useState<number | null>(null);

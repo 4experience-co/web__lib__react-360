@@ -1,7 +1,6 @@
 /* eslint-disable no-param-reassign */
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { useFrame, useThree } from "@react-three/fiber";
-import * as THREE from "three";
 
 import DeviceOrientationControls from "~/webgl/utils-3d/DeviceOrientationControls";
 import DeviceOrientationControlsYawFixer from "~/webgl/utils-3d/DeviceOrientationControlsYawFixer";
