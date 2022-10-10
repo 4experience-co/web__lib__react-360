@@ -15,5 +15,5 @@ export default defineConfig({
       "~": path.resolve(__dirname, "src")
     }
   },
-  base: "/web__template__react/"
+  base: "/web__lib__react-360/"
 });
