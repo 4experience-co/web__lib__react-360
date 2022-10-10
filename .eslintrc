@@ -6,7 +6,6 @@
   "extends": ["plugin:react/recommended", "airbnb", "plugin:@typescript-eslint/recommended", "prettier"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "project": "./tsconfig.json",
     "ecmaFeatures": {
       "jsx": true
     },
@@ -23,8 +22,14 @@
     }
   },
   "rules": {
-    "@typescript-eslint/strict-boolean-expressions": "error",
-    "padding-line-between-statements": ["error", { "blankLine": "always", "prev": "*", "next": "if" }],
+    "padding-line-between-statements": [
+      "error",
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "if"
+      }
+    ],
     "curly": "error",
     "comma-dangle": [
       "error",
