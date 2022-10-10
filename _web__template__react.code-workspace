@@ -1,0 +1,24 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "extensions": {
+    "recommendations": [
+      "naumovs.color-highlight",
+      "editorconfig.editorconfig",
+      "simonsiefke.svg-preview",
+      "esbenp.prettier-vscode",
+      "styled-components.vscode-styled-components",
+      "dbaeumer.vscode-eslint"
+    ]
+  },
+  "settings": {
+    "eslint.enable": true,
+    "eslint.codeActionsOnSave.mode": "all",
+    "editor.codeActionsOnSave": {
+      "source.fixAll": true,
+    }
+  }
+}
