@@ -8,12 +8,8 @@ import useOrientation from "~/hooks/useOrientation";
 import DeviceOrientationView from "~/webgl/objects-3d/DeviceOrientationView";
 
 const ArrowScene: React.FC = () => {
-  const { addOrientationEventListeners, getDeviceOrientationPermission } = useOrientation();
+  const { getDeviceOrientationPermission } = useOrientation();
   const [isOrientationPermissionGranted, setIsOrientantionPermissionGranted] = useState(false);
-
-  useEffect(() => {
-    addOrientationEventListeners();
-  }, [addOrientationEventListeners]);
 
   const handleOnMapButtonPress = useCallback(async () => {
     await getDeviceOrientationPermission();
